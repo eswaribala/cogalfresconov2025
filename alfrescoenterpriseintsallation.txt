@@ -1,1 +1,9 @@
 https://www.hyland.com/en/resources/alfresco-trial#content
+
+#click on enterprse 30 day trail -- download now
+#fill registration
+#go to mail download docker-compose 
+#go to the folder where you have compose file
+#open cmd prompt with admin provileges
+#run the following cmd from the folder
+docker-compose up -d
