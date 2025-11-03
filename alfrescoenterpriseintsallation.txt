@@ -7,3 +7,6 @@ https://www.hyland.com/en/resources/alfresco-trial#content
 #open cmd prompt with admin provileges
 #run the following cmd from the folder
 docker-compose up -d
+
+#to access postgres server
+docker exec -it <postgrescontainerid> psql -U alfresco
