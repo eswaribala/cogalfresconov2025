@@ -10,3 +10,12 @@ docker-compose up -d
 
 #to access postgres server
 docker exec -it <postgrescontainerid> psql -U alfresco
+
+#once you logged in to show all the databases
+\l
+#swicth to specific database
+\c <dbname>
+#to list all the tables under the specific database
+\dt
+#to quit
+press q
