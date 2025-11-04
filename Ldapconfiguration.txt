@@ -5,4 +5,9 @@ docker run -d -p 389:10389 openfrontier/apacheds
 https://directory.apache.org/studio/download/download-windows.html
 #get window 64 installer
 
+#Open your Apache Directory Studio⁠ and create a new ldap connection to 
+#host name
+ldap://:389 
+uid=admin,ou=system as the BindDN 
+secret as the bind BindPassword.
 
