@@ -18,3 +18,8 @@ secret as the bind BindPassword.
 #in parttion add new partition
 partition id : sevenses
 suffix : o=sevenseas
+
+#we have to download repository jar file
+#go to acs container
+#usr/local/tomcat/webapps/alfresco/WEB-INF/lib
+
