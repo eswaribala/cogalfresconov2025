@@ -19,3 +19,5 @@ docker exec -it <postgrescontainerid> psql -U alfresco
 \dt
 #to quit
 press q
+#to shut down all the containers, go to alfresco training folder, run
+docker-compose down
