@@ -7,7 +7,7 @@ https://directory.apache.org/studio/download/download-windows.html
 
 #Open your Apache Directory Studio⁠ and create a new ldap connection to 
 #host name
-ldap://:389 
+localhost
 uid=admin,ou=system as the BindDN 
 secret as the bind BindPassword.
 
