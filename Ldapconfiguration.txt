@@ -23,3 +23,8 @@ suffix : o=sevenseas
 #go to acs container
 #usr/local/tomcat/webapps/alfresco/WEB-INF/lib
 
+#copy jar file from container
+#go to alfresco training folder
+docker cp <acscontainerid>:/usr/local/tomcat/webapps/alfresco/WEB-INF/lib/alfresco-repository-25.2.0.64.jar .
+
+
