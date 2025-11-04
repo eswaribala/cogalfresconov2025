@@ -21,3 +21,8 @@ docker exec -it <postgrescontainerid> psql -U alfresco
 press q
 #to shut down all the containers, go to alfresco training folder, run
 docker-compose down
+
+#install alfresco using mvn build tool
+#be at alfresco training
+mvn archetype:generate -Dfilter=org.alfresco:
+
