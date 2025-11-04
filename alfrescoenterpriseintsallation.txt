@@ -26,3 +26,7 @@ docker-compose down
 #be at alfresco training
 mvn archetype:generate -Dfilter=org.alfresco:
 
+#after creating alfresco all in one project, go to all-in-one folder
+#build the project
+run.bat build_start
+
