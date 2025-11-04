@@ -11,3 +11,10 @@ localhost
 uid=admin,ou=system as the BindDN 
 secret as the bind BindPassword.
 
+#once the connection successful
+#go to Apacheds server, create the server
+#double click on server
+#select partition tab
+#in parttion add new partition
+partition id : sevenses
+suffix : o=sevenseas
