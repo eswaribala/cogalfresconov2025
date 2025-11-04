@@ -26,5 +26,7 @@ suffix : o=sevenseas
 #copy jar file from container
 #go to alfresco training folder
 docker cp <acscontainerid>:/usr/local/tomcat/webapps/alfresco/WEB-INF/lib/alfresco-repository-25.2.0.64.jar .
+#rename jar file to zip file
+#extract the zip
 
 
