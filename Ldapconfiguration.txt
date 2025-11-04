@@ -3,6 +3,6 @@ docker run -d -p 389:10389 openfrontier/apacheds
 
 #to configure user, download ldap studio
 https://directory.apache.org/studio/download/download-windows.html
-#get installer
+#get window 64 installer
 
 
