@@ -1,0 +1,4 @@
+#download existing theme
+#go to alfresco training folder
+docker cp <sharecontainerid>:/usr/local/tomcat/webapps/share/themes/greenTheme .
+#it will be copied to local folder
