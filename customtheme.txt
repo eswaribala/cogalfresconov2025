@@ -36,3 +36,7 @@ docker cp <sharecontainerid>:/usr/local/tomcat/webapps/share/themes/greenTheme .
         </less-variables>
     </css-tokens>
 </theme>
+
+# after making changes
+# go to alfresco training folder, open all-in-one, go to cmd prompt
+run.bat reload_share
