@@ -31,4 +31,20 @@ docker cp <acscontainerid>:/usr/local/tomcat/webapps/alfresco/WEB-INF/lib/alfres
 #create a copy of the folder
 docker cp alfresco-repository-25.2.0.64-Copy <acscontainerid>:/usr/local/tomcat/webapps/alfresco/WEB-INF/lib
 
-
+#modify ldap properties
+#go to acs container
+#reach /usr/local/tomcat/shared/classes/alfresco-global.properties
+#add the following
+ldap.authentication.active=true
+authentication.chain=localLDAP:ldap,alfrescoNtlm1:alfrescoNtlm
+#ldap.authentication.allowGuestLogin=false
+ldap.authentication.userNameFormat=cn=%s,ou=people,o=sevenseas
+ldap.authentication.java.naming.provider.url=ldap://host.docker.internal:389
+ldap.synchronization.active=true
+ldap.synchronization.java.naming.security.principal=uid\=admin,ou\=system
+ldap.synchronization.java.naming.security.credentials=secret
+ldap.synchronization.groupQuery=(objectclass\=groupOfUniqueNames)
+ldap.synchronization.personQuery=(objectclass\=person)
+ldap.synchronization.groupSearchBase=ou\=groups,o\=sevenseas
+ldap.synchronization.userSearchBase=ou\=people,o\=sevenseas
+ldap.synchronization.groupMemberAttributeName=uniquemember
