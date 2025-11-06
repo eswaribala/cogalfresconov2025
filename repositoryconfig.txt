@@ -5,7 +5,7 @@
         <!-- any evaluator that returns true will show the item -->
         
         <evaluator type="org.alfresco.web.evaluator.HasAuthority">
-          <param name="authority">Group_Content_Manager</param>
+          <param name="authority">GROUP_Content_Manager</param>
         </evaluator>
       </item>
     </app-items>
@@ -18,7 +18,7 @@
   
         <evaluator type="user-groups">
           <groups>
-           <group>Group_Content_Manager</group>
+           <group>GROUP_Content_Manager</group>
           </groups>
         </evaluator>
       
