@@ -1,0 +1,12 @@
+1) Scenario at a glance
+Site & foldersInsurance site → Policies/ , Claims/ , Evidence/ , Approved/
+Model: Insurance ModelPrefix: ins • Namespace: http://example.com/insurance/1.0
+Key objects
+Types: ins:policy, ins:claim
+Aspects: ins:policyInfo, ins:claimInfo, ins:evidenceInfo
+Associations
+ins:policy ⟶ (child-assoc, many) ⟶ ins:claim
+ins:claim ⟷ (peer, many) ⟶ cm:content (evidence docs)
+Constraints: dropdown lists & regex for numbers; min/max for dates & amounts
+Built-ins we’ll leverage: cm:content, cm:folder, aspects cm:titled, cm:versionable, cm:taggable, cm:auditable
+Automation (UI rules): apply aspects, set defaults, start review workflow, transform to PDF, extract metadata
