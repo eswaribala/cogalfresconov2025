@@ -13,3 +13,14 @@
     </app-items>
   </header>
 </config>
+========================================
+<config evaluator="string-compare" condition="Repository">
+  <visible>true</visible>
+  
+        <evaluator type="user-groups">
+          <groups>
+           <group>Group_Content_Manager</group>
+          </groups>
+        </evaluator>
+      
+</config>
