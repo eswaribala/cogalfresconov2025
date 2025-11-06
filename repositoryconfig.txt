@@ -1,5 +1,4 @@
-<alfresco-config>
-  <!-- Header: show the Repository menu item only to GROUP_Content_Manager -->
+<!-- Header: show the Repository menu item only to GROUP_Content_Manager -->
   <config evaluator="string-compare" condition="Header">
     <header>
       <app-items>
@@ -19,4 +18,3 @@
       <param name="authority">GROUP_Content_Manager</param>
     </evaluator>
   </config>
-</alfresco-config>
