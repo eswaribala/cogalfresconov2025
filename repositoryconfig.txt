@@ -1,25 +1,22 @@
-<config evaluator="string-compare" condition="Header">
-  <header>
-    <app-items>
-      <item id="repository" index="30" label="link.repository" href="repository">
-        <!-- any evaluator that returns true will show the item -->
-        
-        <evaluator type="org.alfresco.web.evaluator.HasAuthority">
-          <param name="authority">GROUP_Content_Manager</param>
-        </evaluator>
-      </item>
-    </app-items>
-  </header>
-</config>
+<alfresco-config>
+  <!-- Header: show the Repository menu item only to GROUP_Content_Manager -->
+  <config evaluator="string-compare" condition="Header">
+    <header>
+      <app-items>
+        <item id="repository" index="30" label="link.repository" href="repository">
+          <evaluator type="org.alfresco.web.evaluator.HasAuthority">
+            <param name="authority">GROUP_Content_Manager</param>
+          </evaluator>
+        </item>
+      </app-items>
+    </header>
+  </config>
 
-========================================
-<config evaluator="string-compare" condition="Repository">
-  <visible>true</visible>
-  
-        <evaluator type="user-groups">
-          <groups>
-           <group>GROUP_Content_Manager</group>
-          </groups>
-        </evaluator>
-      
-</config>
+  <!-- Repository page: only visible to GROUP_Content_Manager -->
+  <config evaluator="string-compare" condition="Repository">
+    <visible>true</visible>
+    <evaluator type="org.alfresco.web.evaluator.HasAuthority">
+      <param name="authority">GROUP_Content_Manager</param>
+    </evaluator>
+  </config>
+</alfresco-config>
