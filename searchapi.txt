@@ -1,0 +1,14 @@
+You can search with a REST call:
+Endpoint:
+POST /alfresco/api/-default-/public/search/versions/1/search
+Body:
+{
+  "query": {
+    "query": "TYPE:'my:contractDocument' AND @my\\:contractId:'CNT-2025-001'"
+  },
+  "paging": {
+    "maxItems": 50,
+    "skipCount": 0
+  }
+}
+Result: JSON with NodeRefs, paths, and metadata.
