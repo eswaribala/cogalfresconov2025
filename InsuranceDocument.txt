@@ -1,0 +1,37 @@
+-----------------------------------------
+            INSURANCE POLICY DOCUMENT
+-----------------------------------------
+
+Policy Number: HP-001234
+Policy Type: Health Insurance
+Policy Holder: Mr. Arjun Sharma
+Start Date: 2024-01-01
+End Date: 2025-01-01
+
+Coverage Details:
+  - Hospitalization Expenses: ₹5,00,000
+  - Pre/Post Hospitalization: ₹50,000
+  - Ambulance Cover: ₹10,000
+  - Critical Illness Benefit: Included
+  - Cashless Hospitals: 450+ Network Hospitals
+
+Premium Details:
+  - Annual Premium: ₹12,000
+  - Payment Mode: Yearly
+  - Next Due Date: 2025-01-01
+
+Nominee Information:
+  - Name: Mrs. Meena Sharma
+  - Relation: Spouse
+  - Contact: 9876543210
+
+Additional Notes:
+  - Waiting period of 30 days for non-accidental claims.
+  - Pre-existing diseases covered after 2 years.
+  - Claim settlement via HealthPortal app or branch office.
+
+-----------------------------------------
+Issued By:
+RPS GROUP Insurance Division
+Contact: care@rpsgroupinsurance.com
+----------------------------------------
