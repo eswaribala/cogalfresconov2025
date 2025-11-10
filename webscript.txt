@@ -1,1 +1,32 @@
 https://docs.alfresco.com/content-services/latest/tutorial/platform/web-scripts/#helloworldws
+===
+find folder
+folderPath="Repository/DataDictionaty";
+var folder = roothome.childByNamePath(folderPath);
+        
+// validate that folder has been found
+if (folder == undefined || !folder.isContainer) {
+   status.code = 404;
+   status.message = "Folder " + folderpath + " not found.";
+   status.redirect = true;
+   upload = companyhome.createFile(file.filename) ;
+  upload.properties.content.guessMimetype(file.filename);
+  upload.properties.content.write(file.content);
+  upload.properties.title = title;
+  upload.properties.description = description;
+  upload.save();
+  // setup model for response template
+  model.upload = upload;
+} else{
+
+upload = folder.createFile(file.filename) ;
+  upload.properties.content.guessMimetype(file.filename);
+  upload.properties.content.write(file.content);
+  upload.properties.title = title;
+  upload.properties.description = description;
+  upload.save();
+  // setup model for response template
+  model.upload = upload;
+
+
+}
