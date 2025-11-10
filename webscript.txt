@@ -1,0 +1,1 @@
+https://docs.alfresco.com/content-services/latest/tutorial/platform/web-scripts/#helloworldws
