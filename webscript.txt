@@ -1,7 +1,7 @@
 https://docs.alfresco.com/content-services/latest/tutorial/platform/web-scripts/#helloworldws
 ===
 find folder
-var folderPath = "/Company Home/Data Dictionary/Uploads";
+var folderPath = "Data Dictionary/Messages";
 
 // Locate target folder
 var folder = companyhome.childByNamePath(folderPath);
