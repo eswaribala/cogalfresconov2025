@@ -1,13 +1,15 @@
 https://docs.alfresco.com/content-services/latest/tutorial/platform/web-scripts/#helloworldws
 ===
 find folder
-folderPath="Repository/DataDictionaty";
-var folder = roothome.childByNamePath(folderPath);
+var folderPath = "/Company Home/Data Dictionary/Uploads";
+
+// Locate target folder
+var folder = companyhome.childByNamePath(folderPath);
         
 // validate that folder has been found
 if (folder == undefined || !folder.isContainer) {
    status.code = 404;
-   status.message = "Folder " + folderpath + " not found.";
+   status.message = "Folder " + folderPath + " not found.";
    status.redirect = true;
    upload = companyhome.createFile(file.filename) ;
   upload.properties.content.guessMimetype(file.filename);
