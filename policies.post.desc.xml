@@ -1,0 +1,18 @@
+<webscript>
+  <shortname>Create Policy</shortname>
+  <description>Create a Policy node with content and metadata</description>
+  <url>/insurance/policies</url>
+  <authentication>user</authentication>
+  <transaction>required</transaction>
+  <format default="json">argument</format>
+  <multipart>true</multipart>
+  <http-methods><method>POST</method></http-methods>
+  <args>
+    <arg name="policyNumber" required="true"/>
+    <arg name="holderName"/>
+    <arg name="policyType"/>
+    <arg name="startDate"/>
+    <arg name="endDate"/>
+    <arg name="targetPath"/>
+  </args>
+</webscript>
