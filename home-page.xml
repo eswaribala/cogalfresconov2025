@@ -1,3 +1,4 @@
-<template-instance>
-    <template-type>tutorials/home-page</template-type>
-</template-instance>
+<page>
+    <template-instance>home-page</template-instance>
+    <authentication>user</authentication>
+</page>
