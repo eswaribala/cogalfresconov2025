@@ -1,0 +1,32 @@
+<extension>
+    <modules>
+        <module>
+            <id>extra-menu-module</id>
+            <version>1.0</version>
+            <auto-deploy>true</auto-deploy>
+
+            <config evaluator="region" condition="share-header">
+                <region-id>share-header</region-id>
+                <components>
+                    <component>
+                        <scope>global</scope>
+                        <region-id>share-header</region-id>
+                        <url>/components/header/extra-menu</url>
+                        <sub-components/>
+                    </component>
+                </components>
+            </config>
+        </module>
+        <module>
+            <id>extra-menu-module</id>
+            <version>1.0</version>
+            <auto-deploy>true</auto-deploy>
+            <customizations>
+                <customization>
+                    <targetPackageRoot>org/alfresco/share/header</targetPackageRoot>
+                    <sourcePackageRoot>admintoolsmenu</sourcePackageRoot>
+                </customization>
+            </customizations>
+        </module>
+    </modules>
+</extension>
