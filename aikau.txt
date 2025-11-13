@@ -1,0 +1,3 @@
+https://github.com/Alfresco/Aikau/tree/master/aikau/src/main/resources/aikau
+
+https://support.hyland.com/r/Alfresco/Alfresco-Content-Services/23.3/Alfresco-Content-Services/Develop/Share-UI-Extension-Points/Aikau-Widgets
