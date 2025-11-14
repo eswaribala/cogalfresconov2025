@@ -10,8 +10,8 @@ define(["dojo/_base/declare",
     function(declare, _Widget, Core, AlfCoreXhr, domConstruct, array, _Templated, template) {
         return declare([_Widget, Core, AlfCoreXhr, _Templated], {
             templateString: template,
-            cssRequirements: [{cssFile:"./css/AjaxWidget.css"}],
-            i18nRequirements: [ {i18nFile: "./i18n/AjaxWidget.properties"} ],
+            cssRequirements: [{cssFile:"./css/StudyCreationAjaxWidget.css"}],
+            i18nRequirements: [ {i18nFile: "./i18n/StudyCreationAjaxWidget.properties"} ],
             buildRendering: function example_widgets_AjaxWidget__buildRendering() {
                 this.widgetTitle = this.message('widgetTitle');
                 this.name = this.message('name');
