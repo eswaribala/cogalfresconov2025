@@ -5,7 +5,7 @@ define(["dojo/_base/declare",
         "dojo/dom-construct",
         "dojo/_base/array",
         "dijit/_TemplatedMixin",
-        "dojo/text!./templates/AjaxWidget.html"
+        "dojo/text!./templates/StudyCreationAjaxWidget.html"
     ],
     function(declare, _Widget, Core, AlfCoreXhr, domConstruct, array, _Templated, template) {
         return declare([_Widget, Core, AlfCoreXhr, _Templated], {
@@ -14,8 +14,8 @@ define(["dojo/_base/declare",
             i18nRequirements: [ {i18nFile: "./i18n/AjaxWidget.properties"} ],
             buildRendering: function example_widgets_AjaxWidget__buildRendering() {
                 this.widgetTitle = this.message('widgetTitle');
-                this.columnName = this.message('columnName');
-                this.columnDescription = this.message('columnDescription');
+                this.name = this.message('name');
+                this.email = this.message('email');
                 this.inherited(arguments);
             },
             postCreate: function example_widgets_AjaxWidget__postCreate() {
@@ -31,8 +31,9 @@ define(["dojo/_base/declare",
                 alert("on success callback reached");
                // alert(response);
                // console.log(response);
+                var parentNode = this.containerNode;
+                console.log(parentNode);
                 response.forEach(function(d) {
-                    var parentNode = this.containerNode;
                     console.log(d);
                     var row = domConstruct.create( "tr", {}, parentNode );
                     domConstruct.create( "td", { innerHTML: d.username }, row);
