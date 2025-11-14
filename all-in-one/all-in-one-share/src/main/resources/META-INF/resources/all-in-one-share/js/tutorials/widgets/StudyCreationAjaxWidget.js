@@ -19,21 +19,35 @@ define(["dojo/_base/declare",
                 this.inherited(arguments);
             },
             postCreate: function example_widgets_AjaxWidget__postCreate() {
-                var url = Alfresco.constants.PROXY_URI + "slingshot/doclib/treenode/node/alfresco/company/home";
+                alert("reaching the widget");
+               // var url = Alfresco.constants.PROXY_URI + "slingshot/doclib/treenode/node/alfresco/company/home";
+                var url="https://jsonplaceholder.typicode.com/users"
                 this.serviceXhr({url : url,
                     method: "GET",
                     successCallback: this._onSuccessCallback,
                     callbackScope: this});
             },
             _onSuccessCallback: function example_widgets_AjaxWidget__onSuccessCallback(response, config) {
-                if (response.totalResults != undefined && response.totalResults > 0) {
+                alert("on success callback reached");
+               // alert(response);
+               // console.log(response);
+                response.forEach(function(d) {
+                    var parentNode = this.containerNode;
+                    console.log(d);
+                    var row = domConstruct.create( "tr", {}, parentNode );
+                    domConstruct.create( "td", { innerHTML: d.username }, row);
+                    domConstruct.create( "td", { innerHTML: d.email }, row);
+                    console.log(row);
+                })
+
+               /* if (response.totalResults != undefined && response.totalResults > 0) {
                     var parentNode = this.containerNode;
                     array.forEach( response.items, function(item) {
                         var row = domConstruct.create( "tr", {}, parentNode );
                         domConstruct.create( "td", { innerHTML: item.name }, row);
                         domConstruct.create( "td", { innerHTML: item.description }, row);
                     });
-                }
+                }*/
             }
         });
     });
