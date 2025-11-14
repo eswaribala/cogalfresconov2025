@@ -1,0 +1,8 @@
+<webscript>
+    <shortname>Create/Update Policy</shortname>
+    <description>Accept policy JSON</description>
+    <url>/insurance/policy</url>
+    <format default="json">argument</format>
+    <authentication>user</authentication>
+    <transaction>required</transaction>
+</webscript>

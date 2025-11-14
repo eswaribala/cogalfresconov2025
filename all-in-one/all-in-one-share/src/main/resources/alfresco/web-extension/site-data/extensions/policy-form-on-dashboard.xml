@@ -1,0 +1,17 @@
+<extension>
+    <modules>
+        <module>
+            <id>com.cognizant.insurance.policyForm</id>
+            <version>1.0</version>
+            <auto-deploy>true</auto-deploy>
+            <components>
+                <component>
+                    <region-id>site-dashboard</region-id>
+                    <source-id>site</source-id>
+                    <scope>page</scope>
+                    <url>/components/insurance/policy-form</url>
+                </component>
+            </components>
+        </module>
+    </modules>
+</extension>

@@ -1,0 +1,17 @@
+<extension>
+    <modules>
+        <module>
+            <id>com.cognizant.banking.customerForm</id>
+            <version>1.0</version>
+            <auto-deploy>true</auto-deploy>
+            <components>
+                <component>
+                    <region-id>site-dashboard</region-id>
+                    <source-id>site</source-id>
+                    <scope>page</scope>
+                    <url>/components/banking/customer-form</url>
+                </component>
+            </components>
+        </module>
+    </modules>
+</extension>

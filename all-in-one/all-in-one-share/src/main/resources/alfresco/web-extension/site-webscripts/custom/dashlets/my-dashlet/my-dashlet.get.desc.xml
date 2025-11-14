@@ -1,0 +1,15 @@
+<webscript>
+    <shortname>My Dashlet</shortname>
+    <description>A very simple custom dashlet</description>
+
+    <family>dashlet</family>
+    <url>/components/dashlets/my-dashlet</url>
+
+    <authentication>user</authentication>
+    <format default="html">argument</format>
+
+    <title-id>dashlet.mydashlet.title</title-id>
+    <description-id>dashlet.mydashlet.desc</description-id>
+
+    <icon>/components/images/dashlet-my-tasks-48.png</icon>
+</webscript>

@@ -1,0 +1,13 @@
+<webscript>
+    <shortname>List Policies</shortname>
+    <description>List policy nodes</description>
+    <url>/insurance/policies</url>
+    <authentication>user</authentication>
+    <transaction>required</transaction>
+    <format default="json">argument</format>
+    <http-methods>
+        <method>GET</method>
+    </http-methods>
+    <lifecycle>internal</lifecycle>
+    <family>Insurance</family>
+</webscript>

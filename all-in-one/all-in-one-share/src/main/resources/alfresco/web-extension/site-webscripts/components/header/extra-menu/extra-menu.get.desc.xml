@@ -1,0 +1,7 @@
+<webscript>
+    <shortname>Extra Header Menu</shortname>
+    <family>component</family>
+    <url>/components/header/extra-menu</url>
+    <authentication>user</authentication>
+    <format default="html">argument</format>
+</webscript>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>site/insurance/claims-dashboard</id>
+    <title>Claims Dashboard</title>
+    <template-instance>site-dashboard</template-instance>
+    <authentication>user</authentication>
+    <components>
+        <!-- Bind the dashlet into a region that exists in site-dashboard -->
+        <component>
+            <region-id>title</region-id>  <!-- tip: title/header/column-left/column-right depending on your template -->
+            <url>components/dashlets/mydashlet</url>
+            <properties><title>Recent Claims</title></properties>
+        </component>
+    </components>
+</page>

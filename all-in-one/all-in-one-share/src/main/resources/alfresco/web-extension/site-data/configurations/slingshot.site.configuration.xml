@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<alfresco-config>
+
+    <!-- Register 'home-page' as a dashboard page -->
+    <config evaluator="page" condition="home-page">
+        <page-type-id>dashboard</page-type-id>
+        <default-template-instance>dashboard</default-template-instance>
+
+        <title>Product Page</title>
+        <description>Dashboard with custom dashlets</description>
+    </config>
+
+</alfresco-config>

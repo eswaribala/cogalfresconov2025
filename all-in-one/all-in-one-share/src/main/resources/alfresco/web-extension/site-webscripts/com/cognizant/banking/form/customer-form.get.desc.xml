@@ -1,0 +1,7 @@
+<webscript>
+    <shortname>Customer Form Widget</shortname>
+    <description>Sending Customer Details</description>
+    <family>share</family>
+    <url>/components/banking/customer-form</url>
+    <authentication>user</authentication>
+</webscript>

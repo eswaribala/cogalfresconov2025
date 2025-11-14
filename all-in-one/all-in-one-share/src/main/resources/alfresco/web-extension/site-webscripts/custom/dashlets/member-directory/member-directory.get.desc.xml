@@ -1,0 +1,14 @@
+<webscript>
+    <shortname>Member Directory Surf Dashlet</shortname>
+    <description>Provide Search of people and display in a list
+    </description>
+    <family>dashlet</family>
+    <url>/components/dashlets/member-directory</url>
+    <authentication>user</authentication>
+    <format default="html">argument</format>
+
+    <title-id>dashlet.memberdirectory.title</title-id>
+    <description-id>dashlet.memberdirectory.desc</description-id>
+
+    <icon>/components/images/dashlet-my-tasks-48.png</icon>
+</webscript>

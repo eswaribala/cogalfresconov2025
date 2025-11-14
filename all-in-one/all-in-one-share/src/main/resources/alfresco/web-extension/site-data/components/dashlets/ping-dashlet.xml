@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component>
+    <id>ping-dashlet</id>
+    <title>Ping Dashlet</title>
+    <description>A very simple custom dashlet</description>
+
+    <!-- MUST match the webscript url -->
+    <url>/org/alfresco/components/dashlets/ping-dashlet</url>
+
+    <region-id>dashboard</region-id>
+    <scope>page</scope>
+</component>

@@ -1,0 +1,7 @@
+<webscript>
+    <shortname>Policy Form Widget</shortname>
+    <description>Inline form that posts JSON</description>
+    <family>share</family>
+    <url>/components/insurance/policy-form</url>
+    <authentication>user</authentication>
+</webscript>

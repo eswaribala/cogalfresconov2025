@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<webscript>
+    <shortname>Aikau Simple Popup</shortname>
+    <description>Simple Aikau page with a popup</description>
+
+    <url>/custom/aikau/simple-popup</url>
+
+    <authentication>user</authentication>
+
+    <!-- IMPORTANT: Aikau pages must render JSON, not HTML -->
+    <format default="json">json</format>
+
+    <!-- Required for Share Aikau pages -->
+    <family>share</family>
+</webscript>

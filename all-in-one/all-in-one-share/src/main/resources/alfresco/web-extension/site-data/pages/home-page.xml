@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <id>home-page</id>
+
+    <title>Home Page</title>
+    <title-id>page.home.title</title-id>
+    <description>Product Description</description>
+    <description-id>page.home.description</description-id>
+    <!-- IMPORTANT: use built-in dashboard template -->
+    <template-instance>home-page</template-instance>
+
+    <authentication>user</authentication>
+</page>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dashboards>
+    <!-- id MUST match <id>home-page</id> in page xml -->
+    <dashboard id="home-page">
+
+        <column id="1">
+            <!-- You already have ping-dashlet.xml, so use that first -->
+            <dashlet id="ping-dashlet" />
+        </column>
+
+        <column id="2">
+            <!-- later you can add my-dashlet here -->
+            <!-- <dashlet id="my-dashlet" /> -->
+        </column>
+
+    </dashboard>
+</dashboards>

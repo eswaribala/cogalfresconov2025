@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<page>
+    <title>Product Page</title>
+    <title-id>page.product.title</title-id>
+    <description>Product Description</description>
+    <description-id>page.product.description</description-id>
+    <template-instance>product-page</template-instance>
+    <authentication>user</authentication>
+</page>
